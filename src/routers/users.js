@@ -43,7 +43,7 @@ router.get('/users/:id/pic', async(req,res)=>{
     }
 })
 
-//for post requests
+//for post requests for sign up process
 router.post('/users', async (req, res) => {
     console.log(req.body)
     const user = new User(req.body)
