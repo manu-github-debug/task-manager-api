@@ -12,8 +12,11 @@ app.use(express.json())// this line says that we need to make use of json only
 app.use(userRouter)// telling express to use this routing 
 app.use(taskRouter)
 
+// for default
+app.get('',(req,res)=>{
 
-
+    res.status(200).send({message:'Welcome to node api....created by sai manoj'})
+})
 
 // this is the port where it runs
 app.listen(port, () => {
