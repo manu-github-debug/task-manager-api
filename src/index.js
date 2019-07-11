@@ -15,7 +15,7 @@ app.use(taskRouter)
 // for default
 app.get('',(req,res)=>{
 
-    res.status(200).send({message:'Welcome to node api....created by sai manoj'})
+    res.status(200).send('Welcome to node api....created by sai manoj')
 })
 
 // this is the port where it runs
